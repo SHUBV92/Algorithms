@@ -84,4 +84,31 @@ let a = array.reduce((acc, cur) => {
             // return result}
 return r
     })
-console.log(a)
+
+
+    console.log(a)
+
+
+
+    let d = new Date();
+let n = d.getTime()
+
+let y = Math.round(n / years)
+
+
+let minutes = 1000 * 60
+console.log( minutes )
+
+let hours = minutes * 60 
+console.log( hours )
+
+let days = hours * 24 
+console.log( hours )
+
+let years = days * 365 
+console.log( hours )
+
+
+let years 
+
+console.log(y)
