@@ -29,19 +29,25 @@ numbers = [
   }
 ];
 
-const calculate = number => {
+
+
+const calculate = () => {
   //     numbers.filter()
   //     if (number ===  numbers[i].) {
   //     return number[i]
   //   }
 
-  let result = document.getElementById("result");
+  let result = 
+  numbers[0].name
+  document.getElementById("result").innerHTML = numbers[0].name;
   console.log(result);
-  let result = 0;
-  // numbers[0].name
+
+
 
   return numbers;
 };
+
+
 
 console.log(calculate(1000));
 console.log("Number: ", numbers[0].name);
