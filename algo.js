@@ -69,46 +69,83 @@
 
 // })
 
+// Using Reduce to get the sum 
 
-let a = array.reduce((acc, cur) => {
-    console.log("acc: ", acc)
-    console.log("cur: ", cur)
+// let a = array.reduce((acc, cur) => {
+//     console.log("acc: ", acc)
+//     console.log("cur: ", cur)
 
-    let result = acc * cur
-    console.log("result1: ", result)
+//     let result = acc * cur
+//     console.log("result1: ", result)
     
-    let r = result * acc 
-    console.log("result2: ", result)
+//     let r = result * acc 
+//     console.log("result2: ", result)
 
-    // if ((result) === 8) {
-            // return result}
-return r
-    })
-
-
-    console.log(a)
+//     // if ((result) === 8) {
+//             // return result}
+// return r
+//     })
 
 
-
-    let d = new Date();
-let n = d.getTime()
-
-let y = Math.round(n / years)
+//     console.log(a)
 
 
-let minutes = 1000 * 60
-console.log( minutes )
 
-let hours = minutes * 60 
-console.log( hours )
+//     let d = new Date();
+// let n = d.getTime()
 
-let days = hours * 24 
-console.log( hours )
-
-let years = days * 365 
-console.log( hours )
+// let y = Math.round(n / years)
 
 
-let years 
+// let minutes = 1000 * 60
+// console.log( minutes )
 
-console.log(y)
+// let hours = minutes * 60 
+// console.log( hours )
+
+// let days = hours * 24 
+// console.log( hours )
+
+// let years = days * 365 
+// console.log( hours )
+
+
+// let years 
+
+// console.log(y)
+
+
+// ----------------------> Reverse 
+
+const reverse = (arr) => {
+    new_arr = []
+    for(let i = 0; i < arr.length; i++) {
+        console.log(i)
+        new_arr.unshift(arr[i])
+    }
+    return new_arr
+}
+
+console.log("Reverse", reverse([4,3,65,32,15,35,24,64,25,3]))
+
+
+
+// ----------------------> Creating Duplicates 
+
+const hasDuplicates = (arr) =>{
+    for(let i = 0; i < arr.length; i++) {
+        for(j = i+1; i < arr.length; i++){
+            if(i == j){
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+ console.log(hasDuplicates( ["Orange", "Blue", "Blue", "Orange", "Pink", "Purple", "Yellow"] ))
+
+
+// ----------------------> Fibonacci Sequence
+
+// fi
